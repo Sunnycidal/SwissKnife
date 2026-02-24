@@ -1,0 +1,17 @@
+<project name="SwissKnife" default="run" basedir=".">
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="out"/>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="br.com.altino.swissknife.Main" classpath="${build.dir}" fork="true"/>
+    </target>
+</project>
