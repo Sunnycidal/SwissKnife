@@ -30,4 +30,10 @@ public class Exercicio1 {
         System.out.println("Raiz cubica: " + cbrt);
     }
 
+    public double somar(double a, double b)
+    {
+        return a+b;
+    }
+
+
 }
