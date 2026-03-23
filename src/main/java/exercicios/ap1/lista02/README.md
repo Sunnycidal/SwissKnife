@@ -1,7 +1,8 @@
-# Lista 01 — Condicionais
+# Lista 02 — Condicionais
 
 Exercícios de lógica condicional da disciplina **Algoritmos e Programação 1**.  
-Cada exercício é uma classe independente com um método `executar()` chamado pelo menu principal do SwissKnife.
+Cada exercício é uma classe independente com um método `executar()` chamado pelo 
+menu principal do SwissKnife.
 
 ---
 
@@ -123,7 +124,8 @@ Converta uma nota numérica (0 a 10) para conceito:
 ### Ex15 — Calculadora simples
 `Ex15Calculadora.java`
 
-Peça dois números e uma operação (`+`, `-`, `*`, `/`). Execute a operação e exiba o resultado.
+Peça dois números e uma operação (`+`, `-`, `*`, `/`). Execute a operação e 
+exiba o resultado.
 
 ---
 
@@ -217,7 +219,8 @@ O programa deve mostrar o valor convertido com base em **cotação fixa**.
 ### Ex25 — Área de figuras geométricas
 `Ex25AreaFiguras.java`
 
-O usuário escolhe uma figura geométrica e o programa pede as medidas necessárias para calcular a **área**:
+O usuário escolhe uma figura geométrica e o programa pede as medidas necessárias 
+para calcular a **área**:
 - 1 — Círculo
 - 2 — Quadrado
 - 3 — Retângulo
