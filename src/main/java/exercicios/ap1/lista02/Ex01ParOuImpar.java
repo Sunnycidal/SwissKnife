@@ -2,9 +2,7 @@ package exercicios.ap1.lista02;
 import java.util.Scanner;
 public class Ex01ParOuImpar {
 
-    public static void main(String[] args) {
-        executar();
-    }
+    public static void main(String[] args) {executar();}
 
     public static void executar() {
 
