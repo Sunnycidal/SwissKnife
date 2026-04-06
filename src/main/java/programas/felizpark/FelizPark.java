@@ -1,4 +1,4 @@
-package programas.tete;
+package programas.felizpark;
 import java.time.Duration;
 import java.util.Scanner;
 import java.time.LocalTime;
@@ -54,10 +54,10 @@ public class FelizPark {
         boolean cobertura;
         System.out.println("Vaga coberta? (S/N): ");
         String respostaCoberta = in.next().trim().toUpperCase();
-        if(respostaCoberta.matches("^[S]$")){
+        if(respostaCoberta.matches("^S$")){
             cobertura = true;
         }
-        else if (respostaCoberta.matches("^[N]$")) {
+        else if (respostaCoberta.matches("^N$")) {
             cobertura = false;
         }
         else {
@@ -86,16 +86,13 @@ public class FelizPark {
             valorFinal = minutosParaCalculo * (7.0 / 60.0);
         }
 
-        // CORREÇÃO: Acréscimo de 20% para vaga coberta
-        if (cobertura) {  // ou: if (cobertura == true)
-            valorFinal = valorFinal * 1.20;  // Acrescenta 20%
-            // Alternativa: valorFinal = valorFinal * (1 + 20.0 / 100.0);
+        if (cobertura) {
+            valorFinal = valorFinal * 1.20;
         }
 
         //SAÍDA DE DADOS
         //===================================================================================
 
-        // Calculando horas e minutos para exibição
         long horas = minutosReais / 60;
         long minutos = minutosReais % 60;
 
