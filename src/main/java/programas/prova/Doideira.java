@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Doideira {
 
     public static void main(String[] args) {
-
+        long inicio = System.currentTimeMillis();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("====Transportadora do caralho=====\n\n\n");
@@ -31,7 +31,7 @@ public class Doideira {
         carrinho = sc.next().trim();
 
         if(carrinho.matches("^201$")) {
-            System.out.println("TECLADO");
+            System.out.println("Você selecionou: TECLADO MECÂNICO");
             System.out.println("Informe a quantidade(Máx 20): ");
             if (sc.hasNextInt())
             {
@@ -40,12 +40,11 @@ public class Doideira {
                 else{System.out.println("Quantidade inválida");return;}
             }
             else
-            {System.out.println("Quantidade inválida");return;}
+            {System.out.println("Opção inválida");return;}
         }
 
-
         else if(carrinho.matches("^202$")) {
-            System.out.println("MOUSE GAMER");
+            System.out.println("Você selecinou: MOUSE GAMER");
             System.out.println("Informe a quantidade(Máx 20): ");
             if (sc.hasNextInt())
             {
@@ -53,12 +52,11 @@ public class Doideira {
                 if(quantidade >0 && quantidade <21){subTotal = quantidade * $2;}
                 else{System.out.println("Quantidade inválida"); return;}
             }
-            else{System.out.println("Quantidade inválida");return;}
+            else{System.out.println("Opção inválida");return;}
         }
 
-
         else if(carrinho.matches("^203$")) {
-            System.out.println("HD EXTERNO 1TB");
+            System.out.println("Você selecinou: HD EXTERNO 1TB");
             System.out.println("Informe a quantidade(Máx 20): ");
             if (sc.hasNextInt())
             {
@@ -66,12 +64,11 @@ public class Doideira {
                 if(quantidade >0 && quantidade <21){subTotal = quantidade * $3;}
                 else{System.out.println("Quantidade inválida");return;}
             }
-            else{System.out.println("Quantidade inválida");return;}
+            else{System.out.println("Opção inválida");return;}
         }
 
-
         else if(carrinho.matches("^204$")) {
-            System.out.println("ROTEADOR WIRELESS");
+            System.out.println("Você selecinou: ROTEADOR WIRELESS");
             System.out.println("Informe a quantidade(Máx 20): ");
             if (sc.hasNextInt())
             {
@@ -79,12 +76,11 @@ public class Doideira {
                 if(quantidade >0 && quantidade <21){subTotal = quantidade * $4;}
                 else{System.out.println("Quantidade inválida");return;}
             }
-            else{System.out.println("Quantidade inválida");return;}
+            else{System.out.println("Opção inválida");return;}
         }
 
-
         else if(carrinho.matches("^205$")) {
-            System.out.println("WEBCAM FULL HD");
+            System.out.println("Você selecinou: WEBCAM FULL HD");
             System.out.println("Informe a quantidade(Máx 20): ");
             if (sc.hasNextInt())
             {
@@ -92,7 +88,7 @@ public class Doideira {
                 if(quantidade >0 && quantidade <21){subTotal = quantidade * $5;}
                 else{System.out.println("Quantidade inválida");return;}
             }
-            else{System.out.println("Quantidade inválida");return;}
+            else{System.out.println("Opção inválida");return;}
         }
         else {System.out.println("Opção de código inválida");return;}
 
@@ -209,6 +205,8 @@ public class Doideira {
 
 
         sc.close();
+        long duracao = System.currentTimeMillis() - inicio;
+        System.out.println(duracao);
     }
 
 }

@@ -5,36 +5,36 @@ import java.util.Scanner;
 public class PROVA {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println("inicializando ChileOS...");
+
         System.out.println("Insira algo maior que 0");
+
         int algo = sc.nextInt();
 
-        if (algo>0){
-            System.out.println("boa");
-        }else{
-            System.out.println("TEM Q SER MAIOR, insere dnv");
-            algo = sc.nextInt();
-        }
+        if (algo>0){System.out.println("boa");}
+        else
+        {System.out.println("TEM Q SER MAIOR, insere dnv");
+
+            algo = sc.nextInt();}
 
         System.out.println("vamo tentar dnv, INSERE AI");
+
         algo = sc.nextInt();
 
         System.out.println("vamo ver se é maior");
 
-        if(algo>0){
-            System.out.println("ainda é maior");
-        }else {
-            System.out.println(algo<-1 ? "veja isto: https://pt.wikihow.com/Pensar-de-Forma-L%C3%B3gica" : "algo n é menor q 0 nem ferrando");
-        }
+        if(algo>0){System.out.println("ainda é maior");}
+        else
+        {System.out.println(algo<-1 ? "veja isto: https://pt.wikihow.com/Pensar-de-Forma-L%C3%B3gica" : "algo n é menor q 0 nem ferrando");}
 
         System.out.println("\nesses algos sao complicados...\n " +
                 "se vc tiver rodando esse codigo em um terminal com utf 8 + suporte a ANSI digita 1 (recomendável)\n" +
                 "se n, digita 2");
 
         int opcao = sc.nextInt();
+
         switch (opcao){
             case 1:
                 String reset =      "\u001B[0m";
@@ -85,9 +85,6 @@ public class PROVA {
                 System.out.println("inválido");
                 break;
         }
-
-
-
 
         sc.close();
         return;
